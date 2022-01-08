@@ -6,7 +6,7 @@
     align-items: center;
     background-color: #74B9FF; 
     text-align: center;
-    padding: 5px;
+    padding: 30px;
     height: 40vh;
     
 }
@@ -18,13 +18,19 @@
     height: 60vh;
     /* L'image de fond couvrira tout l'espace disponible */;
     background-size: cover;
-    /* Le texte est aligné au centre du conteneur en largeur */;
+    /* Le texte est "justifié" au centre */
     text-align: center;
-    /* Le texte est aligné au centre du conteneur en hauteur, cet attribut est spécifique à display flex */;
+    /* Le texte est aligné au centre du conteneur en largeur */;
     justify-content:center;
+    /* Le texte est aligné au centre du conteneur en hauteur, cet attribut est spécifique à display flex */;
+    align-items: center;
     /* On aligne l'image de fond au centre, horizontalement et verticalement */
     background-position: center center;
                 
+}
+#home h1 {
+    /* On supprime la marge en haut qu'il y a de base sur le h1 pour que le centrage vertical soit visuelement correct */
+    margin-top: 0px;
 }
         
 .picto {
@@ -43,7 +49,17 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
-a {
-    /* Le lien "mon compte" sera blanc (et toutes les balises a de manière générale) */
+.mon-compte {
+    display: flex;
+    align-items:center;
+    justify-content: center;
+}
+.bouton-link {
+    /* Le lien "mon compte" sera blanc */
     color: #FFFFFF;
+    /* avec une bordure blanche */
+    border: 1px solid #FFFFFF;
+    /* et des coins arrondis */
+    border-radius: 4px;
+    padding: 10px;
 }
