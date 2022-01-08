@@ -1,0 +1,49 @@
+#main-force {
+    display: flex;
+    /* Les éléments sont distribués horizontalement car le flex-direction est orienté en "row" donc horizontalement de base */
+    justify-content: space-between;
+    /* Les éléments sont centrés verticalement, comme l'attribut précédent cet attribut est spécifique au display flex */
+    align-items: center;
+    background-color: #74B9FF; 
+    text-align: center;
+    padding: 5px;
+    height: 40vh;
+    
+}
+
+#home {
+    display: flex;
+    background-image: url(image/home.jpg);
+    /* Le conteneur fera 60% de la hauteur visible du navigateur */
+    height: 60vh;
+    /* L'image de fond couvrira tout l'espace disponible */;
+    background-size: cover;
+    /* Le texte est aligné au centre du conteneur en largeur */;
+    text-align: center;
+    /* Le texte est aligné au centre du conteneur en hauteur, cet attribut est spécifique à display flex */;
+    justify-content:center;
+    /* On aligne l'image de fond au centre, horizontalement et verticalement */
+    background-position: center center;
+                
+}
+        
+.picto {
+    width: 100px;
+    background-color: #74B9FF;  
+}
+
+#myavatar {
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+body { 
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+}
+
+a {
+    /* Le lien "mon compte" sera blanc (et toutes les balises a de manière générale) */
+    color: #FFFFFF;
+}
